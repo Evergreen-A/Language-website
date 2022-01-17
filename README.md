@@ -3,8 +3,8 @@ The skeleton of a website built for young kids/teens interested in Irish.
 
 This project is a language learning website for kids and young teenagers
 and I will go through every webpage and detail my thoughts while making it.
-
-
+.
+.
 WEBPAGE 1 (index1)
 This is my homepage where I introduce what the website is and what it is.
 
@@ -23,10 +23,10 @@ Then a quote box for an inspirational quote.
 Then a footer for copyright and the likes.
 
 Everything is responsive with a mix of pixels and percentages.
-
-
-
-
+.
+.
+.
+.
 WEBPAGE 2 (The basics)
 The second webpage is where the learning actually takes place
 
@@ -39,10 +39,10 @@ Needed to make the work responsive so I made cards with a shadow as a styling
 and they float.
 
 link to next webpage.
-
-
-
-
+.
+.
+.
+.
 WEBPAGE 3 (ThebasicsV2)
 Third webpage where the user learns objects and what they mean instead of grammar4
 
@@ -51,10 +51,10 @@ go to the basics.css page to see a better and more indepth explaination.
 
 I thought a cool idea would be to have
 pictures with words and when you hover over the pics you have gifs
-
-
-
-
+.
+.
+.
+.
 WEBPAGE 4 (Games)
 Fourth webpage will be quizzes
 
@@ -63,9 +63,10 @@ using the cards to make the quizzes responsive
 
 final quiz is not my design, I linked it in the css, I just thought it
 was a really cool design and implemented it
-
-
-
+.
+.
+.
+.
 WEBPAGE 5 (The country)
 Fifth webpage supposed to tell users about the country
 
@@ -77,13 +78,12 @@ replaced the dots in a list with an image of star, pretty cool
 
 made a gallery? not really sure what to call it, made a design where
 if you hover over an image it shows a bigger version of that image pretty cool
-
-
-
-
+.
+.
+.
+.
 WEBPAGE 6 (Resources)
 sixth webpage just giving the user links to further improve their learning
 
 lists with links
 iframe of a website
-
