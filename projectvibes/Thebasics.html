@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The basics</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Thebasics.css">
+  <link rel="stylesheet" href="index1.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+
+  <!-- changing the colours of the header and nav bar and the writing of words to white -->
+  <style media="screen">
+    .colour-red{color:#fff;background: linear-gradient(to bottom, #910303, #f71919);}
+    .navbar-colour{color:#fff; background: #910303}
+    .colour-white{color:#000;background-color:#fff}
+  </style>
+</head>
+
+
+<body>
+
+  <div class="navbarall">
+    <div class="main-navbar navbar-colour Large-text">
+      <a class="navbardropdown inside-navbar hide-names Large-text navbar-colour" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="element"></i></a>
+      <a href="index1.html" class="navbarhome inside-navbar">Home</a>
+      <a href="Thebasics.html" class="inside-navbar hide-links">The Basics</a>
+      <a href="AllGames.html" class="inside-navbar hide-links">Games</a>
+      <a href="funcountryfacts.html" class="inside-navbar hide-links">The Country</a>
+      <a href="otherResources.html" class="inside-navbar hide-links">Resources</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="sub-navbar" class="sub-navbar1 colour-white hide-names Large-text">
+      <a href="Thebasics.html" class="inside-navbar">The Basics</a>
+      <a href="AllGames.html" class="inside-navbar">Games</a>
+      <a href="funcountryfacts.html" class="inside-navbar">The Country</a>
+      <a href="otherResources.html" class="inside-navbar">Resources</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="container colour-red center-text" style="padding:128px 16px; height:260px;">
+    <h1>Mauris ut semper libero, facilisis egestas lorem,<br>Aliquam erat volutpat.</h1><br>
+    <h2>Gramadach a fhoghlaim</h2>
+  </header>
+
+<br>
+
+<!-- notes to show the user -->
+  <div class="notes" >
+    <p><strong>NOTE!</strong></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc id ante dapibus, vestibulum nisi sed, aliquam arcu.<br><br>
+      Tldr; Bhí is the state of 'being' in past tense (was/were), while Tá is the state of 'being' in present tense (is/are)<br><br>
+    <a class="links1" href="https://www.bitesize.irish/blog/the-proble-of-being-in-irish-gaelic/" target="_blank">Click this text if you want a better explaination!</a></p>
+  </div>
+
+<br><br>
+<!-- first table -->
+  <div class="first-pronouns">
+    <table id="word-table" class="border">
+      <tr>
+        <th>Gaeilge (Irish)</th>
+        <th>Bearla (English)</th>
+      </tr>
+      <tr>
+        <td>Mé</td>
+        <td>Me/I</td>
+      </tr>
+      <tr>
+        <td>Tú</td>
+        <td>You</td>
+      </tr>
+      <tr>
+        <td>Sé</td>
+        <td>He/Him</td>
+      </tr>
+      <tr>
+        <td>Sí</td>
+        <td>She/Her</td>
+      </tr>
+      <tr>
+        <td>Sinn</td>
+        <td>We</td>
+      </tr>
+      <tr>
+        <td>Sibh</td>
+        <td>You (plural)</td>
+      </tr>
+      <tr>
+        <td>Siad</td>
+        <td>They</td>
+      </tr>
+    </table>
+  </div>
+
+<br>
+
+
+<br>
+
+<!-- centering words with . center class -->
+<div class="center">
+  <p><strong>This is a website for the basics in irish so we will only go through the most common pronouns</strong></p>
+</div>
+
+  <!-- setup for the three cards -->
+  <div class="row-padding center margin-top">
+
+     <!-- making card able to be responsive + some styling -->
+      <span class="b">
+
+        <!-- adding shadow and a border -->
+        <!-- min-height means if the height goes under a certain height it does something -->
+        <div class="card border" style="min-height:460px">
+        <h3>Ar (on)</h3><br>
+
+        <!-- width cap on the images -->
+        <img src="images/Thebasics.png" class="" style="width:120px">
+
+        <!-- table begining -->
+        <div class="table1">
+          <table id="word-table">
+            <tr>
+              <th></th>
+              <th>Ar</th>
+              <th>Bearla (English)</th>
+            </tr>
+            <tr>
+              <td>Mé</td>
+              <td>Orm</td>
+              <td>On me</td>
+            </tr>
+            <tr>
+              <td>Tú</td>
+              <td>Ort</td>
+              <td>On you</td>
+            </tr>
+            <tr>
+              <td>Sé</td>
+              <td>Air</td>
+              <td>On him</td>
+            </tr>
+            <tr>
+              <td>Sí</td>
+              <td>Uirthi</td>
+              <td>On her</td>
+            </tr>
+            <tr>
+              <td>Sinn</td>
+              <td>Orainn</td>
+              <td>On us</td>
+            </tr>
+            <tr>
+              <td>Sibh</td>
+              <td>Oraibh</td>
+              <td>On you (plural)</td>
+            </tr>
+            <tr>
+              <td>Siad</td>
+              <td>Orthu</td>
+              <td>On them</td>
+            </tr>
+          </table>
+        </div>
+
+        </div>
+
+       <!-- words under the table -->
+        <div class="words">
+          <br>
+          <span>Examples of how they can be used.</span>
+           <ul>
+             <li>Lorem ipsum quis arcu consequat lacinia. Aenean.</li>
+             <li>Mauris ut semper libero, facilisis egestas lorem.</li>
+             <li>Maecenas vitae lacus molestie felis mattis.</li>
+             <li>Vivamus placerat, ac porta leo aliquam quis.</li>
+             <li>Lorem ipsum  Curabitur in auctor dui, a iaculi.</li>
+             <li>Praesent eros lorem, iaculis eu aliquet a, congue ac.</li>
+           </ul>
+        </div>
+
+      </span>
+
+
+
+     <!-- literally the same things but for a different card -->
+      <span class="b">
+        <div class="card border" style="min-height:460px">
+          <h3>Le (with - ownership)</h3><br>
+          <img src="images/Thebasics.png" class="" style="width:120px">
+          <div class="">
+            <table id="word-table">
+              <tr>
+                <th></th>
+                <th>Le</th>
+                <th>Bearla</th>
+              </tr>
+              <tr>
+                <td>Mé</td>
+                <td>Liom</td>
+                <td>With me</td>
+              </tr>
+              <tr>
+                <td>Tú</td>
+                <td>Leat</td>
+                <td>With you</td>
+              </tr>
+              <tr>
+                <td>Sé</td>
+                <td>Leis</td>
+                <td>With him</td>
+              </tr>
+              <tr>
+                <td>Sí</td>
+                <td>Léi</td>
+                <td>With her</td>
+              </tr>
+              <tr>
+                <td>Sinn</td>
+                <td>Linn</td>
+                <td>With us</td>
+              </tr>
+              <tr>
+                <td>Sibh</td>
+                <td>Libh</td>
+                <td>With you (plural)</td>
+              </tr>
+              <tr>
+                <td>Siad</td>
+                <td>Leo</td>
+                <td>With them</td>
+              </tr>
+            </table>
+          </div>
+          </div>
+
+          <div class="words">
+            <br>
+            <span>Examples of how they can be used.</span>
+             <ul>
+               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+               <li>Suspendisse viverra, metus iaculis condimentum.</li>
+               <li>Maecenas vitae lacus molestie felis mattis vel a nibh.</li>
+               <li>Nunc quis risus sit amet felis cursus tempus.</li>
+               <li>Nam vitae ultricies ex, accumsan sodales.</li>
+               <li>Mauris blandit auctor cursus.</li>
+             </ul>
+          </div>
+        </span>
+
+
+
+      <!-- literally the same things but for a different card -->
+      <span class="b">
+        <div class="card border" style="min-height:460px">
+          <h3>Ag (At - Possession)</h3><br>
+          <img src="images/Thebasics.png" class="" style="width:120px">
+          <div class="">
+            <table id="word-table">
+              <tr>
+                <th></th>
+                <th>Ag</th>
+                <th>Bearla</th>
+              </tr>
+              <tr>
+                <td>Mé</td>
+                <td>Agam</td>
+                <td>I have</td>
+              </tr>
+              <tr>
+                <td>Tú</td>
+                <td>Agat</td>
+                <td>You have</td>
+              </tr>
+              <tr>
+                <td>Sé</td>
+                <td>Aige</td>
+                <td>He has</td>
+              </tr>
+              <tr>
+                <td>Sí</td>
+                <td>Aici</td>
+                <td>She has</td>
+              </tr>
+              <tr>
+                <td>Sinn</td>
+                <td>Againn</td>
+                <td>We have</td>
+              </tr>
+              <tr>
+                <td>Sibh</td>
+                <td>Agaibh</td>
+                <td>You have(plural)</td>
+              </tr>
+              <tr>
+                <td>Siad</td>
+                <td>Acu</td>
+                <td>They have</td>
+              </tr>
+            </table>
+          </div>
+          </div>
+
+          <div class="words">
+            <br>
+            <span class="words-title">Examples of how they can be used.</span>
+             <ul>
+               <li>Lorem ipsum dolor sit amet, Phasellus congue eleifend.</li>
+               <li>Proin tincidunt lobortis eros, arcu blandit sit amet.</li>
+               <li>Quisque in gravida augue.</li>
+               <li>Nulla facilisi, Nulla scelerisque arcu nisi.</li>
+               <li>Proin bibendum, lacus nec pretium egestas. Vestibulum ante ipsum.</li>
+               <li>ut lacinia nibh nisl et metus, aenean.</li>
+             </ul>
+          </div>
+
+    </span>
+
+<!-- formatting with br -->
+<br><br>
+
+<!-- notes again -->
+  <div class="notes" >
+    <p><strong>NOTE!</strong></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc id ante dapibus, vestibulum nisi sed, aliquam arcu.<br><br>
+      These are more notes that you should know but you have to decode them.</p><br>
+  </div>
+
+<br><br>
+  <div class="center">
+    <h2><strong>Now that we've learned some grammar lets learn what some objects are!</strong></h2>
+  </div>
+
+<!-- center words-->
+  <a class="links1" href="ThebasicsV2.html"><p>cliceáil orm agus déan deifir!</p></a>
+
+
+</div>
+</body>
+
+<br><br>
+<hr>
+
+<!-- footer from home menu -->
+<footer class="footer container">
+  <div class="footer-content">
+    Copyright &copy; 2021-2021 Evergreen.Co, All rights reserved.
+ </div>
+ <p>Powered by <a class="bottomlink" href="https://www.gov.ie/en/" target="_blank">Daoine na Heireann</a></p>
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("sub-navbar");
+  if (x.className.indexOf(" show-navbar") == -1) {
+    x.className += " show-navbar";
+  } else {
+    x.className = x.className.replace(" show-navbar", "");
+  }
+}
+</script>
+
+</html>

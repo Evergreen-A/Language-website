@@ -1,0 +1,412 @@
+/* THE ORDER WHERE THE STUFF ARE LOCATED */
+
+/*
+.HTML tag styling
+
+.Navbars
+
+.HEADER
+
+.Sections (1,2,3)
+
+.quotebox
+
+.@media stuff
+
+.footer
+
+.colors
+
+.miscellanious
+//which includes
+general padding
+text sizes
+links styling
+container class
+
+ */
+
+
+
+
+/* used to make the navbar the length of the window and not to make it jut out */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+body{
+  margin:0
+}
+
+/* font sizes for html*/
+html{
+  font:500 17px/20px sans-serif;
+  font-family:sans-serif;
+  line-height:1.5
+}
+
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+
+h1,h2,h3,h4,h5,h6{
+font-family:Arial,sans-serif;
+font-weight:100;
+margin:10px 0
+}
+
+
+
+
+
+/* navbar ------------------------------------------------------------------- */
+
+/* all elements in the navbar fixed so it scrolls down with you */
+.navbarall{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+/* nav bar icon important so it floats to the right */
+.navbardropdown{
+  float:right!important
+}
+
+/* makes sure there isnt an awkward gap inbetween and for all other elements to float left*/
+.main-navbar .inside-navbar{
+  padding:8px 16px;
+  float:left;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0
+}
+
+/*nav bar shadow to make it more dynamic and cool*/
+.main-navbar{
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+/* clear floats and keep the box shadow under navbar when scrolled or clicked*/
+.main-navbar:before,.main-navbar:after{
+  content:"";
+  display:table;
+  clear:both
+}
+
+/* gets rid of underline in words in navbar and makes it look a little bit more pretty */
+.inside-navbar{
+  border:none;
+  display:inline-block;
+  vertical-align:middle;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  padding:12px 24px!important
+}
+
+/* if hover change colour to grey*/
+.inside-navbar:hover{
+  color:#000;
+  background-color:#ccc}
+
+
+/* stuff that impacts both sub navbar and main navbar*/
+.sub-navbar1 .inside-navbar{
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  text-align:left;
+}
+
+/* used to hide the menu until navigation bar is clicked */
+.sub-navbar1{
+  display:none;
+}
+
+
+
+
+
+
+
+
+/* HEADER --------------------------------------------------------------------*/
+
+.header-image{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  border-radius:50%;
+  padding:10px;
+}
+
+/* testing wrapping gif in words, pretty cool */
+.main-header-text {
+  background-image: url(https://media.giphy.com/media/jwMVM6Fq7DjPy/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  /* the background extends as far as the text and wraps around it*/
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 97px!important;
+  line-height: .9;
+  margin: 10px 0;
+}
+
+
+/*header BIG WORDS */
+.main-header-text{
+  margin:16px;
+  font-size:64px;
+}
+
+/* header mini text */
+.sub-header-text{
+ font-size:24px;
+}
+
+
+
+
+
+
+
+
+/* SECTION1 ----------------------------------------------------------------- */
+
+/* impacts all ascpects of section1 */
+.section1{
+padding-top:64px;
+padding-bottom:64px;
+padding-left: 15px!important;
+}
+
+.section1-allwords{
+  margin-left: auto;
+  margin-right: auto;
+  max-width:980px;
+}
+
+/* All words in section1 */
+.section1-words{
+  float:left;
+  width:90%;
+}
+
+/* section1 words just under title */
+.section1-preface{
+  padding-top:10px!important;
+  padding-bottom:10px!important;
+}
+
+/* main paragraph in section1 */
+.section1-main-content{
+  color:#757575!important;
+}
+
+/* image in section1 */
+.section1-image{
+  float:left;
+  width:90%;
+  text-align:center;
+}
+
+
+
+
+
+
+/* SECTION2 ------------------------------------------------------------------*/
+
+/* impacts all ascpects of section2 */
+.section2{
+  padding-top:64px;
+  padding-bottom:64px;
+  background-color:#f1f1f1;
+  padding-left: 15px!important;
+}
+
+/* all the words and images in section2 */
+.section2-allwords{
+  max-width:980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* just the words in section2 */
+.section2-words{
+  float:left;
+  width:100%;
+}
+
+/* words just underneath the title */
+.section2-preface{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+/* just the image in section2 */
+.section2-image{
+  float:left;
+  width:90%;
+  text-align:center!important;
+}
+
+/* main paragraph in section2 */
+.section2-main-content{
+  color:#757575;
+}
+
+
+
+
+/* quotebox ------------------------------------------------------------------*/
+
+/* all things in quotebox */
+.quotebox{
+  padding-top:64px!important;
+  padding-bottom:64px!important;
+  color:#fff;
+  background-color:#000;
+  opacity:0.60;
+  text-align:center;
+}
+
+/* main content inside quote box */
+.quotebox-content{
+  margin:16px!important;
+  font-size:24px!important;
+}
+
+
+
+
+
+
+/* footer --------------------------------------------------------------------*/
+
+/* footer container */
+.footer{
+  padding-top:56px;
+  padding-bottom:20px;
+  text-align:center;
+  opacity:0.60;
+}
+
+/* content inside footer */
+.footer-content{
+  font-size:18px;
+}
+
+
+/* .bottomlink is a class that is in the footer */
+
+
+/* getting rid of ugly link underline and changing colour*/
+a.bottomlink:link {
+  text-decoration:none;
+  color: grey;
+}
+
+/* colour if the link has been visited */
+a.bottomlink:visited {
+  text-decoration:none;
+  color: grey;
+}
+
+/* if you hover over the link it turn black */
+a.bottomlink:hover {
+color: black;
+}
+
+
+
+
+
+
+/* media stuff to make it work on smaller or larger devices----------------- */
+
+/* if the screen is smaller that 601px do this */
+@media (min-width:601px){
+  .section2-image{width:33.33333%}
+  .section1-image{width:33.33333%}
+  .section1-words{width:66.66666%}
+  .section2-words{width:66.66666%}
+}
+
+@media (max-width:640px){
+.hide-links{display:none!important}
+}
+
+@media (max-width:992px) and (min-width:641px){
+.hide-names{display:none!important}
+}
+
+
+
+
+/* Colors --------------------------------------------------------------------*/
+.colour-green{color:#fff;background: linear-gradient(to bottom, #035303, #04db04);}
+.navbar-colour{color:#fff; background: #036603}
+.colour-white{color:#000;background-color:#fff}
+
+
+
+
+
+
+
+/* miscellanious ------------------------------------------------------------ */
+
+a.links:link {
+  text-decoration:none;
+  color:white;
+  background-color: #08a12e;
+display: inline-block;
+padding: 18px 24px;
+}
+
+a.links:visited {
+  text-decoration:none;
+  color:white;
+  background-color: #08a12e;
+display: inline-block;
+padding: 18px 24px;
+}
+
+a.links:hover {
+background-color: #0b5c1f;
+}
+
+.generalpadding{
+  padding: 10px!important;
+}
+
+
+/* all text with this class have this font */
+.Large-text{font-size:18px}
+
+/*suppsoed to show the icon to make a dropdown menu when window becomes small enough*/
+/*it only shows a box which works fine I guess*/
+.element:before{
+  content:"\f0c9";
+}
+
+/* does what it says on the tin */
+.center-text{text-align:center!important}
+
+/* all containers including sections and footer and quotebox etc..... */
+.container:after,.container:before{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* linked to java script and will show menu when clicked */
+.show-navbar{
+  display:block
+}

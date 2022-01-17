@@ -1,0 +1,133 @@
+<html lang="en"><head>
+<title>Linguin</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index1.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<!-- remeber to add a favicon easy clap -->
+
+</head><body>
+
+<!-- Navbar -->
+<div class="navbarall">
+  <div class="main-navbar navbar-colour Large-text">
+    <a class="navbardropdown inside-navbar hide-names Large-text navbar-colour" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="element"></i></a>
+    <a href="index1.html" class="navbarhome inside-navbar">Home</a>
+    <a href="Thebasics.html" class="inside-navbar hide-links">The Basics</a>
+    <a href="AllGames.html" class="inside-navbar hide-links">Games</a>
+    <a href="funcountryfacts.html" class="inside-navbar hide-links">The Country</a>
+    <a href="otherResources.html" class="inside-navbar hide-links">Resources</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="sub-navbar" class="sub-navbar1 colour-white hide-names Large-text">
+    <a href="Thebasics.html" class="inside-navbar">The Basics</a>
+    <a href="AllGames.html" class="inside-navbar">Games</a>
+    <a href="funcountryfacts.html" class="inside-navbar">The Country</a>
+    <a href="otherResources.html" class="inside-navbar">Resources</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="container colour-green center-text" style="padding:128px 16px; height:450px;">
+  <aside class="aside"><img src="images/irelandmap1.png" class="header-image"></aside>
+  <h1 class="main-header-text">LINGUIN</h1>
+  <p class="sub-header-text">A website mainly for young kids/teens interested in Irish.<br>
+  For people that are brand new to the language</p>
+</header>
+
+<!-- These are psuedo sections-->
+<div class="section1 container">
+  <div class="section1-allwords">
+    <div class="section1-words">
+      <h1>The Basics of Irish</h1>
+      <h5 class="section1-preface">A superfast crash course on the irish Language<br>
+      Filled with important and Useful everyday sentences</h5>
+
+<!-- yes i know i can use a list but i prefer this -->
+      <p class="section1-main-content">o A quick glance on the past tense and common verbs<br><br>
+        o Learn how to describe yourself and others around you.<br><br>
+      o Useful words and phrases (nathanna) to help you start speaking irish.<br><br>
+    o Learn about where you live and what each building is called!<br><br>
+  o A start on school and any words you might need in school.<br><br>
+<a class="links" href="Thebasics.html" target="_blank">Lets start Here</a></p> <a class="links" href="ThebasicsV2.html" target="_blank">For the second part of the Basics click me!</a></p>
+    </div>
+
+    <div class="section1-image">
+      <img src="images/thebasics.png" width="270px" padding="30px">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="section2 container">
+  <div class="section2-allwords">
+    <aside class="section2-image" padding="100px">
+      <img src="images/games.png" padding="100px" width="200px">
+    </aside>
+    <div class="section2-words">
+
+      <h1>GAMES!!!</h1>
+      <h5 class="section2-preface">Games to test what you know and what you've learned<br>
+      Who doesn't like playing games? especially educational games.</h5>
+
+      <p class="section2-main-content">o Games on all the different sections you learned.
+        From school, to phrases, to general knowledge of the country! There's a challenge for everyone no matter what section you have learned.<br><br>
+
+      o Theres also a BIG quiz at the end on everything to see just how much you know!<br><br>
+
+    <a class="links" href="AllGames.html" target="_blank">Let's go have some fun</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="section1 container">
+  <div class="section1-allwords">
+    <div class="section1-words">
+      <h1>Eireann (Ireland)</h1>
+      <h5 class="section1-preface">You've learned a little bit of the language, now lets learn about the culture<br>
+      What makes Ireland the country it is today?</h5>
+
+      <p class="section1-main-content">o We'll learn about the most liked foods!<br><br>
+      o Sports and Games that are famous in Ireland.<br><br>
+    o Popular music and instruments used in ireland.<br><br>
+  o Lots and lots of cool facts about Ireland too.<br><br>
+<a class="links" href="funcountryfacts.html" target="_blank">Let's go</a></p>
+    </div>
+
+    <div class="section1-image">
+      <img src="images/ireland.jpg" padding="20px" width="300px">
+    </div>
+    </div>
+</div>
+
+<div class="quotebox container">
+    <h1 class="quotebox-content">"To have another language is to possess a second soul."
+<br>&nbsp;&nbsp;&nbsp;&nbsp;~ Charlemagne</h1>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer container">
+  <div class="footer-content">
+    Copyright &copy; 2021-2021 Evergreen.Co, All rights reserved.
+ </div>
+ <p>Powered by <a class="bottomlink" href="https://www.gov.ie/en/" target="_blank">Daoine na Heireann</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("sub-navbar");
+  if (x.className.indexOf(" show-navbar") == -1) {
+    x.className += " show-navbar";
+  } else {
+    x.className = x.className.replace(" show-navbar", "");
+  }
+}
+</script>
+
+
+
+</body>
+</html>

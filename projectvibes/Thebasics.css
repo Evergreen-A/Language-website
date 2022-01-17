@@ -1,0 +1,377 @@
+/* THE ORDER WHERE THE STUFF ARE LOCATED */
+
+/*
+(some stuff that is used in seperate webpages will just be put
+ in the first web page section)
+
+---------THE BASICS (the first webpage)----------------
+
+-Note!
+
+-links
+
+-Card (making the cards that jut out)
+
+-HTML Table
+
+
+-----------THE BASICSV2 (the second webpage)---------------
+
+-CSS grid
+
+
+
+----------- funcountryfacts (third webpage) ---------------
+-lists
+(links in lists)
+
+-Dublinbridge
+
+-gallery viewing thing
+
+----------- other resources (fourth webpage) ---------------
+links
+*/
+
+
+
+
+
+
+
+
+
+/* -----------------------THE BASICS (FIRST WEBPAGE)------------------------ */
+
+
+
+/* NOTES CLASS ////////////////////////////////////////////////////////////////*/
+
+.notes{
+ content:"";
+ display:table;
+ clear:both;
+ padding:0.01em 16px;
+ margin-top:16px;
+ margin-bottom:16px;
+ border-left:7px solid #bd4602;
+ border-color:#bd4602;
+ color:#000;
+ background-color:#fad189;
+ text-align: left;
+}
+
+
+
+
+
+
+/* LINKS ////////////////////////////////////////////////////////////////////*/
+
+a.links1:link {
+  text-decoration:none;
+  color:white;
+  background-color: #f71919;
+display: inline-block;
+padding: 5px 18px;
+}
+
+a.links1:visited {
+  text-decoration:none;
+  color:white;
+  background-color: #f71919;
+display: inline-block;
+padding: 5px 18px;
+text-decoration:none;
+}
+
+a.links1:hover {
+background-color: #910303;
+}
+
+
+
+
+
+/* Card /////////////////////////////////////////////////////////////////////*/
+.b {
+  display: inline-block;
+  width: 470px;
+  height: 460px;
+  border: 4px;
+  padding: 5px;
+}
+
+.center{text-align:center}
+.center{text-align:center!important}
+.margin-top{margin-top:16px!important}
+.card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+background-color: white;}
+
+
+
+
+
+/* ALL THE TABLES //////////////////////////////////////////////////////////*/
+
+.first-pronouns{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.first-pronouns1{
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+#word-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#word-table td, #word-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#word-table tr:nth-child(even){background-color: #f2f2f2;}
+#word-table tr:nth-child(odd){background-color: white;}
+
+#word-table tr:hover {background-color: #ddd;}
+
+#word-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #d9260b;
+  color: white;
+}
+
+.words{
+  text-align: left;
+}
+
+.words-title{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------THE BASICS V2 SECOND WEBPAGE-------------------------*/
+
+
+/* css grid ////////////////////////////////////////////////////////////*/
+
+/* The Grid */
+.gallery-grid {
+  display: -ms-grid;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* This means that the element in the grid will always be a minimum
+   of 250px; then repeat tells the browser to keep resizing the grid to
+   fit as much as it can on one line if even a fraction of it (1fr)
+   can fit there auto-fill also doesnt stretch the images so
+   i used that instead of auto-fit
+   */
+
+  justify-items: center;
+  margin: 0;
+  grid-column-gap: 1px;
+}
+
+/* The Picture Frame */
+.gallery-frame {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  max-width:270px;
+
+}
+
+/* The Images */
+.gallery-img {
+  max-width: 97%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- funcountryfacts (the third webpage)---------------*/
+
+/* LISTS AND LINKS IN LISTS //////////////////////////////////////////////////////////*/
+
+ol {
+  list-style-type: none;
+}
+
+ol li {
+  padding-left: 32px;
+  background-image: url("star1.png");
+  /* background-color: yellow; */
+  background-size: 27px 27px;
+  background-repeat: no-repeat;
+}
+
+.body-ol{
+font-size: 20px;
+line-height: 1.6;
+
+}
+
+
+li{
+font-size: 18px;
+letter-spacing: 1.3px;
+line-height: 1.5;
+}
+
+a.links2:link {
+  text-decoration:none;
+  color:white;
+  background-color: #e0d204;
+padding: 2px;
+}
+
+a.links2:visited {
+  text-decoration:none;
+  color:white;
+  background-color: #e0d204;
+  padding: 2px;
+}
+
+a.links2:hover {
+background-color: #db8904;
+}
+
+
+
+
+
+/*dublinbridge////////////////////////////////////////////////*/
+
+.dublinbridge{
+padding-top: 40px;
+padding-left: 5px;
+padding-right: 5px;
+
+}
+
+.dublinbridgeimage{
+  max-width: 97%;
+  border-style: double;
+  border-color: black;
+  border-width: 8px;
+}
+
+
+/* /css gallery vibes///////////////////////////////////////////////////////*/
+#gallery-container {
+	position: relative;
+	width: 500px;
+	height: auto;
+
+  /* padding pushes the preview images to the bottom */
+	padding-top: 350px;
+	padding-bottom: 15px;
+
+  /* to make the whole box to stay in the center */
+	margin-left: auto;
+	margin-right: auto;
+
+
+	text-align: center;
+	border: 5px #db8904 solid;
+}
+
+img.gallery-fullsize {
+
+/* making the full sized image big */
+width: 410px;
+height: 300px;
+
+  /* absolute makes the fullsize image always stay in the middle */
+	position: absolute;
+
+  /* makes the image 15px down from top */
+	top: 15px;
+
+  /* where the picture shows, (centers it ) */
+	left: 50px;
+
+  /* it shows nothing until you hover over something */
+	display: none;
+}
+
+div.gallery-item {
+	display: inline-block;
+}
+
+img.gallery-preview:hover ~ img.gallery-fullsize {
+  /* when you hover it displays */
+	display: block;
+}
+
+img.gallery-preview{
+  /* making the preview image small */
+  width: 100px;
+  height: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- otherResources (the fourth webpage)---------------*/
+
+/* LINKS///////////////////////////////////////////////////////////////// */
+
+
+a.links3:link {
+  text-decoration:none;
+  color:white;
+  background-color: #b859eb;
+padding: 2px;
+}
+
+a.links3:visited {
+  text-decoration:none;
+  color:white;
+  background-color: #b859eb;
+  padding: 2px;
+}
+
+a.links3:hover {
+background-color: #580f80;
+}

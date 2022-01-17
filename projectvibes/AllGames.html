@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Games</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Thebasics.css">
+  <link rel="stylesheet" href="index1.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <style media="screen">
+    .colour-blue{color:#fff;background: linear-gradient(to bottom, #014280, #1583eb);}
+    .navbar-colour{color:#fff; background: #014280}
+    .colour-white{color:#000;background-color:#fff}
+    .notes{ border-left:7px solid #020c73;
+     border-color:#020c73;
+     color:#000;
+     background-color:#90b4fc;}
+
+    .section2-words{
+      width:100%;
+    }
+
+    .floatleft{
+      text-align: left;
+    }
+
+    .centerbox{
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+
+
+<div class="navbarall">
+  <div class="main-navbar navbar-colour Large-text">
+    <a class="navbardropdown inside-navbar hide-names Large-text navbar-colour" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="element"></i></a>
+    <a href="index1.html" class="navbarhome inside-navbar">Home</a>
+    <a href="Thebasics.html" class="inside-navbar hide-links">The Basics</a>
+    <a href="AllGames.html" class="inside-navbar hide-links">Games</a>
+    <a href="funcountryfacts.html" class="inside-navbar hide-links">The Country</a>
+    <a href="otherResources.html" class="inside-navbar hide-links">Resources</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="sub-navbar" class="sub-navbar1 colour-white hide-names Large-text">
+    <a href="Thebasics.html" class="inside-navbar">The Basics</a>
+    <a href="AllGames.html" class="inside-navbar">Games</a>
+    <a href="funcountryfacts.html" class="inside-navbar">The Country</a>
+    <a href="otherResources.html" class="inside-navbar">Resources</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="container colour-blue center-text" style="padding:128px 12px; height:260px;">
+<br>
+  <h2>GAMES</h2><br>
+  <h6>By games I mean one type of game and by one type of game I mean filling in the blanks<br>rhoncus non justo ac, rhoncus mollis ligula. Sed vel accumsan neque.</h6>
+</header>
+
+ <body>
+
+   <div class="notes" >
+   <p><strong>NOTE!</strong></p>
+   <p>If a word has quotation marks like these => 'example' that is the word you should focus on/change</p>
+   </div>
+
+
+   <h3 class="center generalpadding"> <strong>These are quick and simple quizzes that you can do</strong></h3>
+
+   <div class="row-padding center margin-top">
+
+      <!-- making card able to be responsive + some styling -->
+       <span class="b">
+         <!-- adding shadow and a border -->
+         <!-- min-height means if the height goes under a certain height it does something -->
+         <div class="card border" style="min-height:460px">
+         <h3 class="generalpadding"><strong>Quiz 1</strong></h3><br>
+
+         <div class="floatleft generalpadding">
+           <form class="form" name="myform">
+            Q1 What does 'mé' mean in english? <input type="text" name="q1"><br><br>
+            Q2 What does 'Sí' mean in english? <input type="text" name="q2"><br><br>
+            Q3 The irish for 'On me' is <input type="text" name="q3"><br><br>
+            Q4 'On us' Translates to... <input type="text" name="q4"><br><br>
+            Q5 'They' went to school <input type="text" name="q5"><br><br>
+            <input type="button" value="submit" onclick="quiz1()">
+            </form>
+         </div>
+         </div>
+       </span>
+
+       <!-- making card able to be responsive + some styling -->
+        <span class="b">
+          <!-- adding shadow and a border -->
+          <!-- min-height means if the height goes under a certain height it does something -->
+          <div class="card border" style="min-height:460px">
+          <h3 class="generalpadding"><strong>Quiz 2</strong></h3><br>
+
+
+          <div class="floatleft generalpadding">
+            <form class="form" name="myform1">
+             Q1 What is 'Teacher' in Irish? <input type="text" name="q1b"><br><br>
+             Q2 I look at the 'Clog' for the time <input type="text" name="q2b"><br><br>
+             Q3 We have PE in the 'Halla spóirt' <input type="text" name="q3b"><br><br>
+             Q4 I cook dinner in the 'Chistin' <input type="text" name="q4b"><br><br>
+             Q5 I have lots of 'Brothers' <input type="text" name="q5b"><br><br>
+             <input type="button" value="submit" onclick="quiz2()">
+             </form>
+          </div>
+          </div>
+        </span>
+
+
+        <!-- making card able to be responsive + some styling -->
+         <span class="b">
+           <!-- adding shadow and a border -->
+           <!-- min-height means if the height goes under a certain height it does something -->
+           <div class="card border" style="min-height:460px">
+            <h3 class="generalpadding"><strong>Quiz 3</strong></h3><br>
+
+
+           <div class="floatleft generalpadding">
+             <form class="form" name="myform2">
+              Q1 I go to a 'restaurant' to eat <input type="text" name="q1c"><br><br>
+              Q2 I so to sleep in my 'seomra leaba' <input type="text" name="q2c"><br><br>
+              Q3 My friends and went to the 'park' <input type="text" name="q3c"><br><br>
+              Q4 Going to the 'movies' is fun <input type="text" name="q4c"><br><br>
+              Q5 My aunty lives in the 'bathroom' <input type="text" name="q5c"><br><br>
+              <input type="button" value="submit" onclick="quiz3()">
+              </form>
+           </div>
+           </div>
+         </span>
+
+         <br><br>
+
+
+         <div class="notes">
+         <p><strong>NOTE!</strong></p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc id ante dapibus, vestibulum nisi sed, aliquam arcu.</p>
+         </div>
+
+
+
+<br>
+
+<div class="generalpadding centerbox" style="width:80%">
+  <div class="generalpadding">
+
+
+                 <h2><strong>Final Quiz</strong></h2>
+             <p><strong>Word Bank:</strong> Apartments - Traffic lights - Shopping center - Computer room - Sinn</p>
+
+ <p>
+   Árasáin translated into english means <input type="text" class="check003" id="input001"/><text class="button002" id="check001"></text><br><br>
+   Soilse trachta is on the roadside to help cars <input id="input002"/><text class="button002" id="check002"></text><br><br>
+   Ionad siopadóireachta is where you find lots of shops <input id="input003"/><text class="button002" id="check003"></text><br><br>
+   I play lots of games in the Seomra ríomhairí <input id="input004"/><text class="button002" id="check004"></text><br><br>
+   'We have' a lot of food at home <input id="input005"/><text class="button002" id="check005"></text>
+  </p>
+             <div id="disappear001"><div id="center001"><button class="button001" onclick="submit001()">Submit</button></div></div><br />
+
+             <!-- this will show a message if they get every question correct -->
+             <div id="center001"><p id="message001"></p><p id="reload001"></p></div>
+                 <br/>
+             <br/>
+     </div>
+</div>
+ </body>
+
+    <footer class="footer container">
+      <div class="footer-content">
+        Copyright &copy; 2021-2021 Evergreen.Co, All rights reserved.
+     </div>
+     <p>Powered by <a class="bottomlink" href="https://www.gov.ie/en/" target="_blank">Daoine na Heireann</a></p>
+    </footer>
+
+
+    <script>
+        var g;
+        var h;
+        var i;
+        var j;
+        var k;
+        function submit001() {
+            b = input001.value;
+            c = input002.value;
+            d = input003.value;
+            e = input004.value;
+            f = input005.value;
+
+            // if they answer correctly
+            if (b == "Apartments" || b == "apartments") {
+                g = 1;
+                //to make the value that the user typed in to be the same when thry click submit
+                input001.value = b;
+
+                // print a check mark to them
+                check001.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+              // else if they answer incorrectly print an X
+                input001.value = b;
+                check001.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (c == "Traffic lights" || c == "traffic lights") {
+                h = 1
+                input002.value = c;
+                check002.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input002.value = c;
+                check002.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (d == "Shopping center" || d == "shopping center") {
+                i = 1;
+                input003.value = d;
+                check003.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input003.value = d;
+                check003.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (e == "Computer room" || e == "computer room") {
+                j = 1;
+                input004.value = e;
+                check004.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input004.value = e;
+                check004.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (f == "Sinn" || f == "sinn") {
+                k = 1;
+                input005.value = f;
+                check005.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input005.value = f;
+                check005.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (g == 1 && h == 1 && i == 1 && j == 1 && k == 1) {
+                message001.innerHTML = "Congratulation! You have successfully finished this quiz.";
+
+                // makes submit button dissapear
+                disappear001.innerHTML = "";
+
+                // turns the submit button into a repeat button that reloads the quiz
+                reload001.innerHTML = "<div id=center001><button class=button001 onclick=repeat001()>Repeat</button></div>";
+            }
+        }
+
+            function repeat001() {
+                location.reload();
+            }
+    </script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  function quiz1(){
+    var v1 = document.myform.q1.value;
+    var v2 = document.myform.q2.value;
+    var v3 = document.myform.q3.value;
+    var v4 = document.myform.q4.value;
+    var v5 = document.myform.q5.value;
+
+    var count = 0;
+
+    if (v1 == "Me" || v1 == "me") {
+               count++;
+    }
+
+    if (v2 == "She" || v2 == "she" || v2 == "Her" || v2 == "her") {
+               count++;
+    }
+
+    if (v3 == "Orm" || v3 == "orm") {
+               count++;
+    }
+
+    if (v4 == "Orainn" || v4 == "orainn") {
+               count++;
+    }
+
+    if (v5 == "Siad" || v5 == "siad") {
+               count++;
+    }
+
+    if (count == 5) {
+      alert("In quiz 1 you got everything correct, well done!");
+    }else {
+      alert("In quiz 1 you got "+count);
+    }
+
+
+  }
+
+</script>
+
+
+<script type="text/javascript">
+function quiz2(){
+  var p1 = document.myform1.q1b.value;
+  var p2 = document.myform1.q2b.value;
+  var p3 = document.myform1.q3b.value;
+  var p4 = document.myform1.q4b.value;
+  var p5 = document.myform1.q5b.value;
+
+  var count1 = 0;
+
+  if (p1 == "Munteoir" || p1 == "munteoir") {
+             count1++;
+  }
+
+  if (p2 == "Clock" || p2 == "clock") {
+             count1++;
+  }
+
+  if (p3 == "Sports hall" || p3 == "sports hall") {
+             count1++;
+  }
+
+  if (p4 == "Kitchen" || p4 == "kitchen") {
+             count1++;
+  }
+
+  if (p5 == "Deartháireacha" || p5 == "deartháireacha" || p5 == "Dearthaireacha" || p5 == "dearthaireacha") {
+             count1++;
+  }
+
+  if (count1 == 5) {
+    alert("In quiz 2 you got everything correct, well done!");
+  }else {
+    alert("In quiz 2 you got "+count1);
+  }
+
+}
+
+</script>
+
+
+
+<script type="text/javascript">
+function quiz3(){
+  var s1 = document.myform2.q1c.value;
+  var s2 = document.myform2.q2c.value;
+  var s3 = document.myform2.q3c.value;
+  var s4 = document.myform2.q4c.value;
+  var s5 = document.myform2.q5c.value;
+
+  var count2 = 0;
+
+  if (s1 == "Bialann" || s1 == "bialann") {
+             count2++;
+  }
+
+  if (s2 == "Bedroom" || s2 == "bedroom") {
+             count2++;
+  }
+
+  if (s3 == "páirc" || s3 == "Páirc" || s3 == "pairc" || s3 == "Pairc") {
+             count2++;
+  }
+
+  if (s4 == "Pictiúrlann" || s4 == "pictiúrlann" || s4 == "pictiurlann" || s4 == "Pictiurlann") {
+             count2++;
+  }
+
+  if (s5 == "Seomra folctha" || s5 == "Seomra folctha") {
+             count2++;
+  }
+
+  if (count2 == 5) {
+    alert("In quiz 3 you got everything correct, well done!");
+  }else {
+    alert("In quiz 3 you got "+count2);
+  }
+
+}
+
+</script>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("sub-navbar");
+  if (x.className.indexOf(" show-navbar") == -1) {
+    x.className += " show-navbar";
+  } else {
+    x.className = x.className.replace(" show-navbar", "");
+  }
+}
+</script>
+
+</html>
